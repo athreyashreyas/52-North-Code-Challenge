@@ -8,6 +8,7 @@ class OGCAPIClient:
         """
         constructor gets initialised according to the OGC Processes API endpoint provided in the object declaration
         """
+        
         self.base_url = base_url
 
     # Conformance Classes
@@ -18,7 +19,7 @@ class OGCAPIClient:
         :return: JSON format as per the API specification in
                  https://docs.ogc.org/is/18-062r2/18-062r2.html#sc_conformance_classes
         """
-
+        
         conformance_url = self.base_url + "/conformance"
         response = requests.get(conformance_url)
 
@@ -189,3 +190,4 @@ class OGCAPIClient:
         response = requests.delete(delete_job_url)
 
         return response.json()
+    
