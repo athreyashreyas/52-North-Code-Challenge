@@ -185,6 +185,7 @@ class OGCAPIClient:
         :param: job_id (str): string value of the job ID to be deleted
         :return: HTTP status code of the DELETE Request. 200 is a successful delete request
         """
+        
         delete_job_url = self.base_url + "/jobs/" + job_id
 
         response = requests.delete(delete_job_url)
