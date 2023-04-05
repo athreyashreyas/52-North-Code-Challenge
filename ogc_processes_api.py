@@ -107,7 +107,7 @@ class OGCAPIClient:
         """
         process_execution_url = self.base_url + "/processes/" + process_id + "/execution"
 
-        response = requests.get(process_execution_url, data=dict)
+        response = requests.post(process_execution_url, params=dict)
 
         return response.status_code
 
