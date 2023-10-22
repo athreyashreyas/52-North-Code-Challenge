@@ -1,5 +1,5 @@
 # Code Challenge for 52° North
-Repository for the code challenge given by 52°North as part of GSoC 2023. The project aims to build a wrapper for python clients wishing to use the OGC Processes API. Since a lot of OGC endpoints have similar classes, paths and methods, an API wrapper would be able to abstract away specific request paths and make an efficient design for similar functions and API calls.
+Repository for the open source code challenge posed by 52°North (also as part of submissions to GSoC 2023). The project aims to build a wrapper for python clients wishing to use the OGC Processes API. Since a lot of OGC endpoints have similar classes, paths and methods, an API wrapper would be able to abstract away specific request paths and make an efficient design for similar functions and API calls.
 
 The repository thus contains a client for a Command Line Interface (CLI) and a wrapper which can be imported into python scripts.
 
